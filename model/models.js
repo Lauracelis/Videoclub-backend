@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-
+// Define the schemas for information movie
 const movieSchema = new mongoose.Schema(
     {
         mov_title:{
@@ -96,6 +96,7 @@ const movieCastSchema= new mongoose.Schema(
     }
 )
 
+//Export the models
 module.exports = mongoose.model("movie", movieSchema);
 module.exports = mongoose.model("cast", movieCastSchema);
 module.exports = mongoose.model("raiting", raitingSchema);
